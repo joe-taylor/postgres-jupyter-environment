@@ -8,10 +8,11 @@ existing relational data.
 
     docker-compose up
 
-After inputing the above in your terminal of choice, jupyter lab will be
-running on port 8888. Through jupyter lab, you may use the sqlalchemy library
-to connect to postgres, which is available in the docker internal network with
-the hostname "postgres".
+After entering the above in your terminal of choice, Jupyter Lab will start
+listening on port 8888. Visit http://localhost:8888, and in a new notebook,
+use the sqlalchemy library to connect to postgres. Postgres is available in
+the docker-compose created private network (which your notebook has access
+to) using the hostname "postgres". See example notebook for more details.
 
 The postgres database starts off empty. See below for instructions on how to
 populate it with data from a postgres dump.
