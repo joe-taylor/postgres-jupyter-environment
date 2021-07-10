@@ -1,0 +1,10 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:9.6-buster
+    environment:
+      - POSTGRES_PASSWORD
+  jupyter:
+    image: jupyter/scipy-notebook
+    ports:
+      - 8888:8888
