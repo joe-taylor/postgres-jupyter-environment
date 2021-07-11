@@ -1,8 +1,10 @@
+> **Work in progress** - this repo doesn't do what it's supposed to yet. Try checking back later.
+
 # Postgres Jupyter Environment
 
-Using docker compose, we provide an easy method of connecting jupyter to an
-isolated postgresql database. This can be an effective way of exploring
-existing relational data.
+Using docker compose, this project will provide an easy method of connecting
+jupyter to an isolated postgresql database. This can be an effective way of
+exploring existing relational data.
 
 ## Usage
 
