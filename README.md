@@ -1,8 +1,8 @@
 # Postgres Jupyter Environment
 
 This project uses Docker Compose to provide a preconfigured Jupyter notebook
-connected to an isolated postgresql database. This can be an effective way to
-explore relational data.
+connected to an isolated postgresql database. This is an effective method of
+exploring relational data.
 
 ## Usage
 
