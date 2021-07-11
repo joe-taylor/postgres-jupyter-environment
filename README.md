@@ -23,3 +23,8 @@ populate it with data from a postgres dump.
 ## Populating postgres from preexisting dump
 
 TODO
+
+## References
+
+ - [PostGIS Book](https://postgis.gishub.org/chapters/installation.html)
+ - [datacamp: SQL Interface within JupyterLab](https://www.datacamp.com/community/tutorials/sql-interface-within-jupyterlab)
