@@ -1,6 +1,3 @@
-> **Work in progress** - this repo doesn't do what it's supposed to yet. Try
-> checking back later.
-
 # Postgres Jupyter Environment
 
 This project uses Docker Compose to provide a preconfigured Jupyter notebook
