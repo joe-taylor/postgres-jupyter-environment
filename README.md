@@ -23,6 +23,18 @@ details.
 The postgres database starts off empty. See below for instructions on how to
 populate it with data from a postgres dump.
 
+## pgadmin
+
+The Docker Compose includes pgadmin4, but some additional configuration is required
+to use it. Namely, you must configure the following two environment variables so that
+you can log in. If these environment variables are set, pgadmin will listen at
+http://127.0.0.1:61886.
+
+|Variable|
+|--------|
+|PGADMIN_DEFAULT_EMAIL|
+|PGADMIN_DEFAULT_PASSWORD|
+
 ## Populating postgres from preexisting dump
 
 To clear and recreate necessary users and databases:

@@ -10,3 +10,11 @@ services:
       - 8888:8888
     depends_on:
       - postgres
+  pgadmin:
+    image: dpage/pgadmin4:5.4
+    environment:
+      # these must be configured by user; .env does not contain any default entries
+      - PGADMIN_DEFAULT_EMAIL
+      - PGADMIN_DEFAULT_PASSWORD
+    ports:
+      - 61886:80
