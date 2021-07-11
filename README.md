@@ -37,7 +37,8 @@ To dump to a file on your local disk:
     export DATABASE_TO_DUMP=foo
     docker-compose exec postgres pg_dump -Fc -U postgres $DATABASE_TO_DUMP  > /path/to/db.dump
 
-To restore from database dump, clear and recreate any necessary users and databases, and then run the following:
+To restore from a local database dump, first clear and recreate any necessary
+users and databases, and then run the following:
 
     cat /path/to/db.dump | docker-compose exec -T postgres pg_restore -U postgres -d postgres
 
