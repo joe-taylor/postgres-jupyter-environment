@@ -5,6 +5,6 @@ services:
     environment:
       - POSTGRES_PASSWORD
   jupyter:
-    image: jupyter/scipy-notebook
+    build: jupyter
     ports:
       - 8888:8888
