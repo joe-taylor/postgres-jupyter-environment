@@ -9,16 +9,19 @@ exploring relational data.
     docker-compose up
 
 After entering the above in your terminal of choice, Jupyter Lab will start
-listening on port 8888. Use the link provided in the Docker Compose output
-(e.g.,
-http://127.0.0.1:8888/lab?token=4837417482e1dc7f3ff5c47cd0cbb71bdffff85e041ab74f)
-to access Jupyter Lab, and then in a new notebook, use the sqlalchemy library
-to connect to postgres. Postgres is available in the private network Docker
-Compose creates for you under the hostname "postgres". Your notebook will
-have access to this hostname by default; no further configuration is
-required. Additionally, the ipython-sql magic is loaded and connected already
-so you can run queries with %sql right away. See example notebook for more
-details.
+listening on port 8888. Use the link provided in the Docker Compose output to
+access Jupyter Lab, and then in a new notebook, use the sqlalchemy library to
+connect to postgres. The URL will look something like this:
+http://127.0.0.1:8888/lab?token=4837417482e1dc7f3ff5c47cd0cbb71bdffff85e041ab74f.
+To retrieve the token for your instance, run `docker-compose exec jupyter
+jupyter lab list`.
+
+Postgres is accessible in the private network Docker Compose created for you.
+It can be accessed via the hostname "postgres". Your notebook will have
+access to this hostname by default; no further configuration is required.
+Additionally, the ipython-sql magic will be loaded already, with a connection
+to aforementioned configured for you, so you can run queries with %sql right
+away. See example notebook for more details.
 
 The postgres database starts off empty. See below for instructions on how to
 populate it with data from a postgres dump.
