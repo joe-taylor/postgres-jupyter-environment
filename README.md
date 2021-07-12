@@ -20,8 +20,8 @@ Postgres is accessible in the private network Docker Compose created for you.
 It can be accessed via the hostname "postgres". Your notebook will have
 access to this hostname by default; no further configuration is required.
 Additionally, the ipython-sql magic will be loaded already, with a connection
-to aforementioned configured for you, so you can run queries with %sql right
-away. See example notebook for more details.
+to the aforementioned postgres configured for you, so you can run queries
+with %sql right away. See example notebook for more details.
 
 The postgres database starts off empty. See below for instructions on how to
 populate it with data from a postgres dump.
