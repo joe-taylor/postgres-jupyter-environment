@@ -10,7 +10,10 @@ WORKDIR /home/jupyter/
 COPY ./Example.ipynb Example.ipynb
 COPY ./ipython-sql-startup.py /home/jupyter/.ipython/profile_default/startup/ipython-sql.py
 USER root
+RUN mkdir /home/jupyter/notebooks
+RUN chown jupyter:jupyter /home/jupyter/notebooks
 RUN chown jupyter:jupyter ./Example.ipynb
 RUN chown -R jupyter:jupyter /home/jupyter/.ipython
+VOLUME /home/jupyter/notebooks
 USER jupyter
 CMD ["jupyter", "lab", "--ip=0.0.0.0"]
